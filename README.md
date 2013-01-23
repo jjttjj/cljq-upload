@@ -4,7 +4,15 @@ This is an example app showing how to use the [jQuery-File-Upload](https://githu
 
 ## Instructions
 
-Clone this repo, set the config variables at the top of cljq-upload.handler, and run 
+Clone this repo, set the following config variables at the top of cljq-upload.handler:
+      (def s3-cred
+      	   {:secret-key "YOUR SECRET KEY"
+	   :access-key "YOUR ACCESS KEY"})
+
+      (def bucket-name "YOUR BUCKET NAME")
+     
+Then run:
+      
       lein ring server
 
 ## License
